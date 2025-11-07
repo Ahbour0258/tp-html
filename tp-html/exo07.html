@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title> Mon TP HTML </title>
+    </head>
+    <body> 
+        <h1>Créer un compte</h1>
+        <form name="Formulaire" method="post" action=" ">
+            <fieldset>
+                <legend><h2>Identité</h2></legend>
+                Nom  <br>
+                <input type="text" name="nom" value=""><br><br>
+                
+                Prenom <br>
+                <input type="text" name="Prenom" value=""><br><br>
+                Date de naissance <br>
+                <input type="date" name="date de naissance" value=""><br>
+
+            </fieldset>
+            <fieldset>
+                 <legend><h2>Contact</h2></legend>
+                  Téléphone <br>
+                  <input type="tel" name="téléphone" value=""pattern="^0[5-7]\d{8}$" placeholder="Ex : 0612345678" required oninput="this.value= this.value.replace(/[^0-9]/g, '')"><br><br>
+                   Site personnel<br>
+                   <input type="url" name=" site" value=""placeholder="https://exemple.com"><br><br>
+    
+            </fieldset>
+            <fieldset>
+                <legend><h2>Sécurité</h2></legend>
+                Mot de passe <br> 
+                <input type="password" name="pass" value="" maxlength="8"><br><br>
+                Confirmation <br>
+                <input type="password" name="pass" value="" maxlength="8"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Préférences</h2></legend>
+                Newsletter <br>
+                <input type="checkbox" name="newsletter" value=""><br>
+                 Rôle <br>
+                 <input type="radio" name="role"> Étudiant<br>
+                 <input type="radio" name="role"> Pro<br>
+                 
+
+
+            </fieldset>
+            <button type="submit">Envoyer </button>
+
+
+        </form>
+
+    </body>
+</html>
